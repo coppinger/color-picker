@@ -7,7 +7,49 @@
     <link rel="stylesheet" href="./output.css" />
     <title>Color Picker</title>
   </head>
-  <body class="bg-black">
-    <p class="text-red-500">Test</p>
+  <body class="bg-black flex items-center justify-center h-screen w-screen">
+    <div class="bg-white h-72 rounded-lg">
+      <div class="h-24 w-full flex p-4 gap-4 items-center">
+        <input class="h-8" type="color" name="color-picker" id="color-picker" />
+        <select
+          class="grow border p-4 rounded-lg"
+          name="color-theme"
+          id="color-theme"
+        >
+          <option value="default">Monochrome</option>
+        </select>
+        <button class="shrink-0 border p-4 rounded-lg" onclick="getColors()">
+          Get color scheme
+        </button>
+      </div>
+      <div class="flex grow h-full">
+        <div class="flex bg-red-500 h-full items-end rounded-bl-lg">
+          <div class="p-4 bg-white rounded-bl-lg">
+            <p class="color-p">#111111</p>
+          </div>
+        </div>
+        <div class="flex bg-red-500 h-full items-end">
+          <div class="p-4 bg-white">
+            <p class="color-p">#111111</p>
+          </div>
+        </div>
+        <div class="flex bg-red-500 h-full items-end">
+          <div class="p-4 bg-white">
+            <p class="color-p">#111111</p>
+          </div>
+        </div>
+        <div class="flex bg-red-500 h-full items-end">
+          <div class="p-4 bg-white">
+            <p class="color-p">#111111</p>
+          </div>
+        </div>
+        <div class="flex bg-red-500 h-full items-end rounded-br-lg">
+          <div class="p-4 bg-white rounded-br-lg">
+            <p class="color-p">#111111</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
