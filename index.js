@@ -12,15 +12,22 @@ function updatePickedMode(event) {
   pickedMode = event.target.value;
 }
 
+function copySelected(event) {
+  navigator.clipboard.writeText(event.target.innerHTML);
+}
+
+let colorP = document.querySelectorAll(".color-p");
+
 function setPickedColor() {
   getColors();
   colorPicker.addEventListener("input", updatePickedColor, false);
   modePicker.addEventListener("input", updatePickedMode, false);
+  for (let i = 0; i < colorP.length; i++) {
+    colorP[i].addEventListener("click", copySelected, false);
+  }
 }
 
 window.addEventListener("load", setPickedColor, false);
-
-let colorP = document.querySelectorAll(".color-p");
 
 function getColors() {
   fetch(
