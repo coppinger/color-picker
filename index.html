@@ -10,42 +10,55 @@
   <body class="bg-black flex items-center justify-center h-screen w-screen">
     <div class="bg-white h-72 rounded-lg">
       <div class="h-24 w-full flex p-4 gap-4 items-center">
-        <input class="h-8" type="color" name="color-picker" id="color-picker" />
+        <input
+          class="h-8"
+          value="#0047AB"
+          type="color"
+          name="color-picker"
+          id="color-picker"
+        />
         <select
           class="grow border p-4 rounded-lg"
           name="color-theme"
           id="color-theme"
         >
-          <option value="default">Monochrome</option>
+          <option value="monochrome" selected>Monochrome</option>
+          <option value="monochrome-dark">Monochrome Dark</option>
+          <option value="monochrome-light">Monochrome Light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic Complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
         </select>
         <button class="shrink-0 border p-4 rounded-lg" onclick="getColors()">
           Get color scheme
         </button>
       </div>
-      <div class="flex grow h-full">
-        <div class="flex bg-red-500 h-full items-end rounded-bl-lg">
-          <div class="p-4 bg-white rounded-bl-lg">
-            <p class="color-p">#111111</p>
+      <div class="flex grow h-full w-full">
+        <div class="flex bg-white h-full w-full items-end rounded-bl-lg">
+          <div class="p-4 bg-white rounded-bl-lg w-full">
+            <p class="color-p">#</p>
           </div>
         </div>
-        <div class="flex bg-red-500 h-full items-end">
-          <div class="p-4 bg-white">
-            <p class="color-p">#111111</p>
+        <div class="flex bg-white h-full w-full items-end">
+          <div class="p-4 bg-white w-full">
+            <p class="color-p">#</p>
           </div>
         </div>
-        <div class="flex bg-red-500 h-full items-end">
-          <div class="p-4 bg-white">
-            <p class="color-p">#111111</p>
+        <div class="flex bg-white h-full w-full items-end">
+          <div class="p-4 bg-white w-full">
+            <p class="color-p">#</p>
           </div>
         </div>
-        <div class="flex bg-red-500 h-full items-end">
-          <div class="p-4 bg-white">
-            <p class="color-p">#111111</p>
+        <div class="flex bg-white h-full w-full items-end">
+          <div class="p-4 bg-white w-full">
+            <p class="color-p">#</p>
           </div>
         </div>
-        <div class="flex bg-red-500 h-full items-end rounded-br-lg">
-          <div class="p-4 bg-white rounded-br-lg">
-            <p class="color-p">#111111</p>
+        <div class="flex bg-white h-full w-full items-end rounded-br-lg">
+          <div class="p-4 bg-white rounded-br-lg w-full">
+            <p class="color-p">#</p>
           </div>
         </div>
       </div>
